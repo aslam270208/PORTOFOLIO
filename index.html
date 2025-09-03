@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Profil Pribadi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-90 backdrop-blur-sm z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-teal-400">ASLAM LAWANG FIRDAUS</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-teal-400 transition-colors duration-300">Home</a>
+                <a href="#portfolio" class="hover:text-teal-400 transition-colors duration-300">Portfolio</a>
+                <a href="#contact" class="hover:text-teal-400 transition-colors duration-300">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-200 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-90 backdrop-blur-sm">
+            <div class="flex flex-col items-center py-4 space-y-4">
+                <a href="#home" class="block py-2 hover:text-teal-400 transition-colors duration-300">Home</a>
+                <a href="#portfolio" class="block py-2 hover:text-teal-400 transition-colors duration-300">Portfolio</a>
+                <a href="#contact" class="block py-2 hover:text-teal-400 transition-colors duration-300">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Home Section -->
+        <section id="home" class="scroll-target min-h-screen flex items-center justify-center text-center p-6">
+            <div class="max-w-4xl mx-auto flex flex-col items-center space-y-8">
+                <img src="image/pp.png" alt="" class="w-40 h-40 rounded-full object-cover shadow-lg border-4 border-teal-400">
+                <h1 class="text-lg sm:text-xl lg:text-2xl font-light text-gray-400 max-w-2xl">Hello Everyone!👋</h1>
+                <h2 class="typing-container"><span class="text-teal-400">I'm Aslam Lawang Firdaus</span></h2>
+                <p class="text-lg sm:text-xl lg:text-2xl font-light text-gray-400 max-w-2xl">I am a student from SMK Telkom Jakarta majoring in Software Engineering. <a> Saya memiliki ketertarikan yang besar dalam dunia pengembangan web serta membangun aplikasi yang tidak hanya indah secara tampilan, tetapi juga efisien, interaktif, dan bermanfaat.</a></p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                    <a href="#portfolio" class="bg-teal-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-teal-600 transition-colors duration-300">Lihat Portfolio</a>
+                    <a href="#contact" class="bg-gray-800 text-teal-400 px-8 py-3 rounded-full font-semibold shadow-lg border border-teal-400 hover:bg-gray-700 transition-colors duration-300">Hubungi Saya</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="scroll-target min-h-screen bg-gray-800 p-8">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Portfolio Saya</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Cards -->
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <img src="image/project1.png" alt="" class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-2xl font-semibold text-gray-100">WEB PERPUSTAKAAN</h3>
+                        <p class="text-gray-400 mt-2">Proyek ini dapet Mempermudahkan User untuk mengisi Data base Perpustakaan</p>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <img src="image/project2.png" alt="" class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-2xl font-semibold text-gray-100">WEB KANTIN SEKOLA</h3>
+                        <p class="text-gray-400 mt-2">Proyek ini dapet Mempermudahkan Pembeli tanpa ribet mengantri</p>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <img src="image/project3.png" alt="" class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-2xl font-semibold text-gray-100">APPS KALKULATOR</h3>
+                        <p class="text-gray-400 mt-2">Proyek ini dapet Mempermudahkan User dalam menghitung</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-target min-h-screen bg-gray-900 p-8 flex items-center justify-center">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Hubungi Saya</h2>
+                <div class="max-w-xl mx-auto bg-gray-800 p-8 rounded-xl shadow-xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-400">Nama</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md bg-gray-700 text-gray-200 border-gray-600 focus:border-teal-500 focus:ring-teal-500" required />
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-400">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md bg-gray-700 text-gray-200 border-gray-600 focus:border-teal-500 focus:ring-teal-500" required />
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-400">Pesan</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md bg-gray-700 text-gray-200 border-gray-600 focus:border-teal-500 focus:ring-teal-500" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-teal-500 text-white py-3 rounded-full font-semibold hover:bg-teal-600 transition-colors duration-300 shadow-lg">Kirim Pesan</button>
+                    </form>
+                    <div id="form-message" class="mt-4 hidden text-center text-teal-400 font-semibold">
+                        Terima kasih! Pesan Anda telah dikirim.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-center p-6">
+        <p class="text-gray-400">&copy; 2025 ASLAM LAWANG FIRDAUS. Hak Cipta Dilindungi Undang-Undang.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

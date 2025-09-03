@@ -1,0 +1,32 @@
+body {
+      background: #0a0f1c;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .typing-container {
+      font-size: 40px;
+      font-weight: bold;
+      color: #18f5c5;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 4s steps(30, end), blink .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: #18f5c5 }
+}
+
+.scroll-target {
+    scroll-margin-top: 5rem;
+}
