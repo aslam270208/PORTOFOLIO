@@ -17,6 +17,13 @@ body {
       animation: typing 4s steps(30, end), blink .75s step-end infinite;
     }
 
+@media (max-width: 640px) {
+  .typing-container {
+    font-size: 24px; 
+    text-align: center;
+  }
+}
+
     @keyframes typing {
       from { width: 0 }
       to { width: 100% }
