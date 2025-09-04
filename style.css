@@ -17,6 +17,66 @@ body {
       animation: typing 4s steps(30, end), blink .75s step-end infinite;
     }
 
+#portfolio {
+  background: url("image/coding.webp") no-repeat center center/cover;
+  position: relative;
+}
+
+#portfolio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6); /* overlay gelap biar teks/card terlihat */
+}
+
+#portfolio .container {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 640px) {
+  #portfolio::before {
+    background: rgba(0,0,0,0.75);
+  }
+}
+
+#card-perpus, #card-kantin, #card-kalkulator {
+  border: 2px solid #00e6ff; /* warna neon biru */
+  box-shadow: 0 0 10px #00e6ff,
+              0 0 20px #00e6ff,
+              0 0 40px #00e6ff;
+  transition: 0.3s ease-in-out;
+}
+
+#card-perpus:hover, #card-kantin:hover, #card-kalkulator:hover {
+  box-shadow: 0 0 20px #00e6ff,
+              0 0 40px #00e6ff,
+              0 0 80px #00e6ff;
+  transform: scale(1.03);
+}
+
+#contact {
+  background: url("image/contact.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6); /* overlay biar teks tetap kebaca */
+}
+
+#contact .container {
+  position: relative;
+  z-index: 1; /* supaya form di atas overlay */
+}
+
+@media (max-width: 640px) {
+  #contact::before {
+    background: rgba(0,0,0,0.7); /* lebih gelap di HP */
+  }
+}
+
 @media (max-width: 640px) {
   .typing-container {
     font-size: 24px; 
