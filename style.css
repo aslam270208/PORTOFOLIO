@@ -33,11 +33,6 @@ body {
   position: relative;
   z-index: 1;
 }
-@media (max-width: 640px) {
-  #portfolio::before {
-    background: rgba(0,0,0,0.75);
-  }
-}
 
 #card-perpus, #card-kantin, #card-kalkulator {
   border: 2px solid #00e6ff; /* warna neon biru */
@@ -69,12 +64,6 @@ body {
 #contact .container {
   position: relative;
   z-index: 1; /* supaya form di atas overlay */
-}
-
-@media (max-width: 640px) {
-  #contact::before {
-    background: rgba(0,0,0,0.7); /* lebih gelap di HP */
-  }
 }
 
 @media (max-width: 640px) {
